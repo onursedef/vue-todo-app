@@ -36,15 +36,6 @@ export default {
         }
         return todo;
       });
-    },
-    changeFilter(filter) {
-        if (filter == 'all') {
-          this.filteredTodos = this.todos;
-        } else if (filter == 'active') {
-          this.filteredTodos = this.todos.filter(todo => !todo.complated);
-        } else if (filter == 'complated') {
-          this.filteredTodos = this.todos.filter(todo => todo.complated);
-        }
     }
   },
 };
